@@ -1,27 +1,5 @@
 'use strict';
 
-// 1) Создать переменную num со значением 266219 (тип данных число)
-// const num = 266219;
-
-// // 2) Вывести в консоль произведение (умножение) цифр этого числа
-// let result = 1;
-
-// for (let digit of String(num)) {
-//     result *= digit
-// };
-
-// console.log(result);
-
-// // 3) Полученный результат возвести в степень 3, используя только 1 оператор (Math.pow не подходит)
-// result **= 3;
-
-// console.log(result);
-
-// // 4) Вывести в консоль первые 2 цифры полученного числа
-// const sliceResult = String(result).slice(0, 2);
-
-// console.log(Number(sliceResult));
-
 // lesson 3
 
 // предыдущее задание методом reduce
@@ -29,18 +7,18 @@
 const num = 266219;
 
 const initialValue = 1;
-let result2 = Array.from(String(num)).reduce((acc, currentValue) => acc * currentValue, initialValue);
+let result = Array.from(String(num)).reduce((acc, currentValue) => acc * currentValue, initialValue);
 // можно было сразу возвести в степень, но для наглядности сделал в 2 этапа
 
-console.log(result2);
+console.log(result);
 
-result2 **= 3;
+result **= 3;
 
-console.log(result2);
+console.log(result);
 
-const sliceResult2 = String(result2).slice(0, 2);
+const sliceResult = String(result).slice(0, 2);
 
-console.log(Number(sliceResult2));
+console.log(Number(sliceResult));
 
 
 // Задание про дни недели
