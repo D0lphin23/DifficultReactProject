@@ -120,6 +120,7 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 
+// Посик простых чисел
 for (let i = 2; i <= 100; i++) {
   let isSimple = true;
 
