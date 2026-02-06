@@ -109,3 +109,30 @@ const formatedString = function (str) {
 };
 
 console.log(formatedString(longString));
+
+// lesson 5
+
+const arr = ["423", "25", "903", "777", "83", "48", "99"];
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i][0] === "2" || arr[i][0] === "4") {
+    console.log(arr[i]);
+  }
+}
+
+// Посик простых чисел
+for (let i = 2; i <= 100; i++) {
+  let isSimple = true;
+
+  for (let j = 2; j < i; j++) {
+    if (i % j === 0) {
+      isSimple = false;
+      break;
+    }
+  }
+
+  if (isSimple) {
+    let resultText = `Делители этого числа: 1 и ${i}`;
+    console.log(i, resultText);
+  }
+}
